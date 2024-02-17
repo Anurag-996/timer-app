@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1D1D23;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 91vh;
+    width: 50%;
+    min-width: 600px;
+    margin: auto;
+}
+
+.container-timer {
+    width: 100%;
+    height: 5rem;
+    background: #34344A;
+    border-radius: 0.7rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.3rem;
+}
+
+.container-timer .timers {
+    background: transparent;
+    margin-left: 1rem;
+}
+
+.inner-dot {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 2rem !important;
+}
+
+.container-timer .timers input ,.inner-time{
+    width: 4rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0.5rem;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+.container-timer .timers label , .innner-dot {
+    margin: 0 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.inner-time{
+    display: inline;
+    padding: 0.8rem 1rem;
+    margin: 0 0.5rem;
+}
+
+.container-timer .set-time-btn {
+    background: #F0F757;
+    border: none;
+    width: 5rem;
+    color: #34344A;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container-timer .set-time-btn:hover {
+    background-color: #ccbf00;
+    color: #34344A;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.set-time{
+    font-size: 1.2rem;
+}
+
+.container-timer .timers input:focus {
+    outline: none; 
+}
+
+.current-timers{
+    background: #39393E;
+    width: 47%;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+
+#activeTimers{
+    width: 100%;
+}
